@@ -1549,7 +1549,7 @@
 
 <h5 id="x5-3-1-1-thing"><bdi class="secno">5.3.1.1</bdi> <code>Thing</code><a class="self-link" aria-label="§" href="#thing"></a></h5>
 
-<p><span class="mark">WoT Thing Description</span>でメタデータとインターフェースが記述されている物理エンティティーまたは仮想エンティティーの抽象化。それに対し、仮想エンティティーは一つ以上の<span class="mark">Thing</span>の合成物である。</p>
+<p><span class="mark">WoT Thing Description</span>でメタデータとインターフェースが記述されている、ある物理エンティティーまたは仮想エンティティーの抽象化。一方、仮想エンティティーは、一つ以上の<span class="mark">Thing</span>の合成物である。</p>
 
 <table class="def">
 <thead>
@@ -1563,13 +1563,13 @@
 <tbody>
   <tr class="rfc2119-table-assertion" id="td-vocab-at-context--Thing">
     <td><code>@context</code></td>
-    <td>TDドキュメント全体で用いる用語と呼ばれる省略名を定義するためのJSON-LDキーワード。</td>
+    <td>TDドキュメント全体で用いる、用語と呼ばれる省略名を定義するためのJSON-LDキーワード。</td>
     <td>必須</td>
     <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#anyURI"><code>anyURI</code></a>または<a href="#dfn-array" class="internalDFN" data-link-type="dfn">配列</a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-at-type--Thing">
     <td><code>@type</code></td>
-    <td>セマンティックタグ (または型) でオブジェクトをラベル付けするJSON-LDキーワード。</td>
+    <td>セマンティックタグ (または型) でオブジェクトをラベル付けするためのJSON-LDキーワード。</td>
     <td>オプション</td>
     <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#string"><code>string</code></a>または<a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#string"><code>string</code></a>の<a href="#dfn-array" class="internalDFN" data-link-type="dfn">配列</a></td>
   </tr>
@@ -1623,7 +1623,7 @@
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-support--Thing">
     <td><code>support</code></td>
-    <td>TDの管理者に関する情報をURIスキーム (例えば、<code>mailto</code> [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc6068" title="The 'mailto' URI Scheme">RFC6068</a></cite>] 、<code>tel</code> [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc3966" title="The tel URI for Telephone Numbers">RFC3966</a></cite>] 、<code>https</code>) として提供する。</td>
+    <td>TDの保守担当者に関する情報をURIスキーム (例えば、<code>mailto</code> [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc6068" title="The 'mailto' URI Scheme">RFC6068</a></cite>] 、<code>tel</code> [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc3966" title="The tel URI for Telephone Numbers">RFC3966</a></cite>] 、<code>https</code>) として提供する。</td>
     <td>オプション</td>
     <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#anyURI"><code>anyURI</code></a></td>
   </tr>
@@ -1637,19 +1637,19 @@
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-properties--Thing">
     <td><code>properties</code></td>
-    <td><span class="mark">Thing</span>のすべての<span class="mark">Property</span>ベースの<a href="#dfn-interaction-affordance" class="internalDFN" data-link-type="dfn"><span class="mark">相互作用のアフォーダンス</span></a>。</td>
+    <td>当該<span class="mark">Thing</span>の、<span class="mark">Property</span>ベースの<a href="#dfn-interaction-affordance" class="internalDFN" data-link-type="dfn"><span class="mark">相互作用のアフォーダンス</span></a>のすべて。</td>
     <td>オプション</td>
     <td><a href="#propertyaffordance"><code>PropertyAffordance</code></a>の<a href="#dfn-map" class="internalDFN" data-link-type="dfn">マップ</a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-actions--Thing">
     <td><code>actions</code></td>
-    <td><span class="mark">Thing</span>のすべての<span class="mark">Action</span>ベースの<a href="#dfn-interaction-affordance" class="internalDFN" data-link-type="dfn"><span class="mark">相互作用のアフォーダンス</span></a>。</td>
+    <td>当該<span class="mark">Thing</span>の、<span class="mark">Action</span>ベースの<a href="#dfn-interaction-affordance" class="internalDFN" data-link-type="dfn"><span class="mark">相互作用のアフォーダンス</span></a>のすべて。</td>
     <td>オプション</td>
     <td><a href="#actionaffordance"><code>ActionAffordance</code></a>の<a href="#dfn-map" class="internalDFN" data-link-type="dfn">マップ</a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-events--Thing">
     <td><code>events</code></td>
-    <td><span class="mark">Thing</span>のすべての<span class="mark">Event</span>ベースの<a href="#dfn-interaction-affordance" class="internalDFN" data-link-type="dfn"><span class="mark">相互作用のアフォーダンス</span></a>。</td>
+    <td>当該<span class="mark">Thing</span>の、<span class="mark">Event</span>ベースの<a href="#dfn-interaction-affordance" class="internalDFN" data-link-type="dfn"><span class="mark">相互作用のアフォーダンス</span></a>のすべて。</td>
     <td>オプション</td>
     <td><a href="#eventaffordance"><code>EventAffordance</code></a>の<a href="#dfn-map" class="internalDFN" data-link-type="dfn">マップ</a></td>
   </tr>
