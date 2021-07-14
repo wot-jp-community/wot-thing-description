@@ -1783,7 +1783,7 @@
 
 <h5 id="x5-3-1-3-propertyaffordance"><bdi class="secno">5.3.1.3</bdi> <code>PropertyAffordance</code> (<span class="mark">Propertyの</span>アフォーダンス) <a class="self-link" aria-label="§" href="#propertyaffordance"></a></h5>
 
-<p><span class="mark">Thing</span>の状態を公開する<span class="mark">相互作用のアフォーダンス</span>。この状態は、後で取得 (読み取り) し、オプションで更新 (書き込み) できる。<span class="mark">Thing</span>は、変更後の新しい状態をプッシュすることにより、<span class="mark">Property</span>を監視可能にすることも選択できる。</p>
+<p><span class="mark">Thing</span>の状態を公開する<span class="mark">相互作用のアフォーダンス</span>。この状態は、取得 (読み取り) でき、オプションで更新 (書き込み) できる。<span class="mark">Thing</span>は、変更後の新しい状態をプッシュすることにより、<span class="mark">Property</span>を監視可能にすることも選択できる。</p>
 
 <table class="def">
 <thead>
@@ -1797,7 +1797,7 @@
 <tbody>
   <tr class="rfc2119-table-assertion" id="td-vocab-observable--PropertyAffordance">
     <td><code>observable</code></td>
-    <td><span class="mark">Thing</span>と<span class="mark">Intermediary</span>を提供する<span class="mark">Servient</span>が、この<span class="mark">Property</span>の<code>observeproperty</code>操作をサポートするプロトコルバインディングを提供すべきかどうかを示すヒント。</td>
+    <td><span class="mark">Thing</span>を提供する<span class="mark">Servient</span>と<span class="mark">Intermediary</span>が、この<span class="mark">Property</span>の<code>observeproperty</code>操作をサポートするプロトコルバインディングを提供すべきかどうかを示すヒント。</td>
     <td>オプション</td>
     <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#boolean"><code>boolean</code></a></td>
   </tr>
@@ -1811,7 +1811,7 @@
 
 </div>
 
-<p><code>PropertyAffordance</code>は、<code>InteractionAffordance</code><a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>と<code>DataSchema</code><a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>の<a href="#dfn-subclass" class="internalDFN" data-link-type="dfn">サブクラス</a>である。<span class="rfc2119-assertion" id="td-op-for-property">Formインスタンスが<code>PropertyAffordance</code>インスタンス内にある場合、<code>op</code>に割り当てられている値は、<code>readproperty</code>、<code>writeproperty</code>、<code>observeproperty</code>、<code>unobserveproperty</code>、またはこれらの用語の組み合わせを含でいる<a href="#dfn-array" class="internalDFN" data-link-type="dfn">配列</a>のいずれかでなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
+<p><code>PropertyAffordance</code>は、<code>InteractionAffordance</code><a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>と<code>DataSchema</code><a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>の<a href="#dfn-subclass" class="internalDFN" data-link-type="dfn">サブクラス</a>である。<span class="rfc2119-assertion" id="td-op-for-property">Formインスタンスが<code>PropertyAffordance</code>インスタンス内にある場合、<code>op</code>に割り当てられている値は、<code>readproperty</code>、<code>writeproperty</code>、<code>observeproperty</code>、<code>unobserveproperty</code>、またはこれらの用語の組み合わせを含んでいる<a href="#dfn-array" class="internalDFN" data-link-type="dfn">配列</a>のいずれかでなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
 
 </section>
 <section id="actionaffordance">
