@@ -6,7 +6,14 @@
 <meta name="generator" content="ReSpec 25.4.2">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
-
+<div class="note" id="issue-container-generatedID">
+<div role="heading" class="ednote-title marker" id="h-ednote" aria-level="5"><span>翻訳者のメモ</span></div>
+<p>訳者注の記述内容をここに書きます。<br/>
+訳者注の中で、文書中の他の箇所を引用する場合、以下の形式で章番号を参照してください。<a href="#sec-hypermedia-controls">§&nbsp;<bdi class="secno" >章番号.節番号.項番号</bdi> 章タイトル</a>。<br/>
+また、引用内容は、以下のように <blocquote>〜</blockquote> を利用して引用してください。<br/>
+<blockquote>引用内容をここに書きます。</blockquote>
+</p>
+</div>
   /* --- for WoT JP --- */
 .mark { background: linear-gradient(transparent 00%, #00ffff 0%);}
 
@@ -1837,31 +1844,37 @@
 <tbody>
   <tr class="rfc2119-table-assertion" id="td-vocab-input--ActionAffordance">
     <td><code>input</code></td>
-    <td><span class="mark">Action</span>の入力データスキーマを定義するために用いる。</td>
+    <td><span class="mark">Action</span>の入力データスキーマを定義するために用いられる。</td>
     <td>オプション</td>
     <td><a href="#dataschema"><code>DataSchema</code></a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-output--ActionAffordance">
     <td><code>output</code></td>
-    <td><span class="mark">Action</span>の出力データスキーマを定義するために用いる。</td>
+    <td><span class="mark">Action</span>の出力データスキーマを定義するために用いられる。</td>
     <td>オプション</td>
     <td><a href="#dataschema"><code>DataSchema</code></a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-safe--ActionAffordance">
     <td><code>safe</code></td>
-    <td><span class="mark">Action</span>が安全か (=true) 否かを通知する。<span class="mark">Action</span>を呼び出す際に、内部状態 (リソースの状態を参照) が変更されていないかを通知するために用いる。その場合、例として応答をキャッシュできる。</td>
+    <td><span class="mark">Action</span>が安全か (=true) 否かを通知する。<span class="mark">Action</span>を呼び出す際に、(当該Actionの呼び出しによって) 内部状態 (リソースの状態を参照) が変更されることがありえるかありえないかを通知するために用いられる。その場合 (=当該Actionの呼び出しによって、内部状態が変更されることがない場合)、応答を例としてキャッシュすることができる。</td>
     <td><a href="#sec-default-values">デフォルトあり</a></td>
     <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#boolean"><code>boolean</code></a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-idempotent--ActionAffordance">
     <td><code>idempotent</code></td>
-    <td><span class="mark">Action</span>が冪等か (=true) 否かを示す。同じ入力に基づいて、結果が同じである<span class="mark">Action</span> (存在している場合) を繰り返し呼び出すことができるかどうかを通知する。</td>
+    <td><span class="mark">Action</span>が冪等か (=true) 否かを示す。同じ入力に基づいて当該の<span class="mark">Action</span>を繰り返し呼び出した場合の結果 (結果が存在している場合) が常に同じであるかどうかを通知する。</td>
     <td><a href="#sec-default-values">デフォルトあり</a></td>
     <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#boolean"><code>boolean</code></a></td>
   </tr>
 </tbody>
 </table>
 
+<div class="note" id="issue-container-generatedID">
+<div role="heading" class="ednote-title marker" id="h-ednote" aria-level="5"><span>翻訳者のメモ</span></div>
+<p>上記の表中、「safe」の説明において、「Used to signal if there is no internal state (cf. resource state) is changed when invoking an Action.」とあるが、「there is no internal state is canged」となっており、「is」が二回使われているのはおかしいので，「there is」を削除すべき。
+</p>
+</div>
+  
 <p><code>ActionAffordance</code>は、<code>InteractionAffordance</code><a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>の<a href="#dfn-subclass" class="internalDFN" data-link-type="dfn">サブクラス</a>である。<span class="rfc2119-assertion" id="td-op-for-action">Formインスタンスが<code>ActionAffordance</code>インスタンス内にある場合、opに割り当てられている値は、<code>invokeaction</code>でなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
 
 </section>
