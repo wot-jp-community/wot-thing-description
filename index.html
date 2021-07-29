@@ -6,7 +6,14 @@
 <meta name="generator" content="ReSpec 25.4.2">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
-
+<div class="note" id="issue-container-generatedID">
+<div role="heading" class="ednote-title marker" id="h-ednote" aria-level="5"><span>翻訳者のメモ</span></div>
+<p>訳者注の記述内容をここに書きます。<br/>
+訳者注の中で、文書中の他の箇所を引用する場合、以下の形式で章番号を参照してください。<a href="#sec-hypermedia-controls">§&nbsp;<bdi class="secno" >章番号.節番号.項番号</bdi> 章タイトル</a>。<br/>
+また、引用内容は、以下のように <blocquote>〜</blockquote> を利用して引用してください。<br/>
+<blockquote>引用内容をここに書きます。</blockquote>
+</p>
+</div>
   /* --- for WoT JP --- */
 .mark { background: linear-gradient(transparent 00%, #00ffff 0%);}
 
@@ -1862,6 +1869,12 @@
 </tbody>
 </table>
 
+<div class="note" id="issue-container-generatedID">
+<div role="heading" class="ednote-title marker" id="h-ednote" aria-level="5"><span>翻訳者のメモ</span></div>
+<p>上記の表中、「safe」の説明において、「Used to signal if there is no internal state (cf. resource state) is changed when invoking an Action.」とあるが、「there is no internal state is canged」となっており、「is」が二回使われているのはおかしいので，「there is」を削除すべき。
+</p>
+</div>
+  
 <p><code>ActionAffordance</code>は、<code>InteractionAffordance</code><a href="#dfn-class" class="internalDFN" data-link-type="dfn">クラス</a>の<a href="#dfn-subclass" class="internalDFN" data-link-type="dfn">サブクラス</a>である。<span class="rfc2119-assertion" id="td-op-for-action">Formインスタンスが<code>ActionAffordance</code>インスタンス内にある場合、opに割り当てられている値は、<code>invokeaction</code>でなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span></p>
 
 </section>
