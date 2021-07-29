@@ -1837,19 +1837,19 @@
 <tbody>
   <tr class="rfc2119-table-assertion" id="td-vocab-input--ActionAffordance">
     <td><code>input</code></td>
-    <td><span class="mark">Action</span>の入力データスキーマを定義するために用いる。</td>
+    <td><span class="mark">Action</span>の入力データスキーマを定義するために用いられる。</td>
     <td>オプション</td>
     <td><a href="#dataschema"><code>DataSchema</code></a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-output--ActionAffordance">
     <td><code>output</code></td>
-    <td><span class="mark">Action</span>の出力データスキーマを定義するために用いる。</td>
+    <td><span class="mark">Action</span>の出力データスキーマを定義するために用いられる。</td>
     <td>オプション</td>
     <td><a href="#dataschema"><code>DataSchema</code></a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-safe--ActionAffordance">
     <td><code>safe</code></td>
-    <td><span class="mark">Action</span>が安全か (=true) 否かを通知する。<span class="mark">Action</span>を呼び出す際に、内部状態 (リソースの状態を参照) が変更されていないかを通知するために用いる。その場合、例として応答をキャッシュできる。</td>
+    <td><span class="mark">Action</span>が安全か (=true) 否かを通知する。<span class="mark">Action</span>を呼び出す際に、(当該Actionの呼び出しによって) 内部状態 (リソースの状態を参照) が変更されることがありえるかありえないかを通知するために用いられる。その場合 (=当該Actionの呼び出しによって、内部状態が変更されることがない場合)、応答を例としてキャッシュすることができる。</td>
     <td><a href="#sec-default-values">デフォルトあり</a></td>
     <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#boolean"><code>boolean</code></a></td>
   </tr>
