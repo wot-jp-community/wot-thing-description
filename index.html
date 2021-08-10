@@ -1972,7 +1972,7 @@
 <p>上記で「otherwise」の意味するところがわかりにくかったため、「(=コンテクスト拡張が利用されていない場合)」という補足を加えた。</p>
 </div>
 
-<p>データスキーマは、データ形式に含まれるデータの抽象的な表記法である。TDでは、具体的なデータ形式は、コンテンツタイプを用いてForm (<a href="#form" class="sec-ref">§&nbsp;<bdi class="secno">5.3.4.2</bdi> <code>Form</code> (フォーム) </a>を参照) で指定される。Formのインスタンス内のコンテンツタイプの値が<code>application/json</code>であれば、JSONスキーマプロセッサでデータスキーマを直接処理できる。そうでない場合は、<span class="mark">Web of Things</span> (WoT) バインディングテンプレート [<cite><a class="bibref" data-link-type="biblio" href="#bib-wot-binding-templates" title="Web of Things (WoT) Binding Templates">WOT-BINDING-TEMPLATES</a></cite>] は、XML [<cite><a class="bibref" data-link-type="biblio" href="#bib-xml" title="Extensible Markup Language (XML) 1.0 (Fifth Edition)">xml</a></cite>] などの他のコンテンツタイプへのデータスキーマの利用可能なマッピングを定義する。フォームのインスタンス内のコンテンツタイプが<code>application/json</code>でなく、コンテンツタイプにマッピングが定義されていない場合は、データスキーマを指定してもコンテンツタイプには意味がない。</p>
+<p>データスキーマは、データ形式に含まれるデータの抽象的な表記法である。TDでは、具体的なデータ形式は、コンテンツタイプを用いてForm (<a href="#form" class="sec-ref">§&nbsp;<bdi class="secno">5.3.4.2</bdi> <code>Form</code> (フォーム) </a>を参照) で指定される。Formのインスタンス内のコンテンツタイプの値が<code>application/json</code>であれば、JSONスキーマプロセッサでデータスキーマを直接処理できる。そうでない場合は、<span class="mark">Web of Things</span> (WoT) バインディングテンプレート [<cite><a class="bibref" data-link-type="biblio" href="#bib-wot-binding-templates" title="Web of Things (WoT) Binding Templates">WOT-BINDING-TEMPLATES</a></cite>] により、データスキーマの、XML [<cite><a class="bibref" data-link-type="biblio" href="#bib-xml" title="Extensible Markup Language (XML) 1.0 (Fifth Edition)">xml</a></cite>] などの他のコンテンツタイプへの、利用可能なマッピングが定義される。フォームのインスタンス内のコンテンツタイプが<code>application/json</code>でなく、当該コンテンツタイプにマッピングが定義されていない場合は、当該コンテンツタイプに対するデータスキーマの指定には意味がない。</p>
 
 <section id="dataschema">
 
