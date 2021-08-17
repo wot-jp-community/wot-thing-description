@@ -1978,7 +1978,7 @@
 
 <h5 id="x5-3-2-1-dataschema"><bdi class="secno">5.3.2.1</bdi> <code>DataSchema</code><a class="self-link" aria-label="§" href="#dataschema"></a></h5>
 
-<p>用いているデータ形式を記述するメタデータ。検証に使用できる。</p>
+<p>利用されているデータ形式を記述するメタデータ。バリデーションのために使用できる。</p>
 
 <table class="def">
 <thead>
@@ -2016,15 +2016,15 @@
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-descriptions--DataSchema">
     <td><code>descriptions</code></td>
-    <td>様々な言語の (人間が読める) 情報をサポートするために使用する。</td>
+    <td>様々な言語の (人間が読める) 情報をサポートするために使用することができる。</td>
     <td>オプション</td>
     <td><a href="#multilanguage"><code>MultiLanguage</code></a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-type--DataSchema">
     <td><code>type</code></td>
-    <td>JSONスキーマと互換性のあるJSONベースのデータ型の割り当て (ブール、整数、数値、文字列、オブジェクト、配列、ヌル (null) のうちの一つ)。</td>
+    <td>JSONスキーマと互換性のあるJSONベースのデータ型の割り当て (ブーリアン、整数、数値、文字列、オブジェクト、配列、ヌル (null) のうちのいずれか)。</td>
     <td>オプション</td>
-    <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#string"><code>string</code></a> (<code>object</code>、<code>array</code>、<code>string</code>、<code>number</code>、<code>integer</code>, <code>boolean</code>、<code>null</code>のうちの一つ) </td>
+    <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#string"><code>string</code></a> (<code>object</code>、<code>array</code>、<code>string</code>、<code>number</code>、<code>integer</code>、 <code>boolean</code>、<code>null</code>のうちのいずれか) </td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-const--DataSchema">
     <td><code>const</code></td>
@@ -2034,37 +2034,37 @@
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-unit--DataSchema">
     <td><code>unit</code></td>
-    <td>例えば、国際的な科学、工学、ビジネスなどで用いられている単位情報を提供する。</td>
+    <td>例えば、国際的な科学、工学、ビジネスなどで用いられている単位の情報を提供する。</td>
     <td>オプション</td>
     <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#string"><code>string</code></a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-oneOf--DataSchema">
     <td><code>oneOf</code></td>
-    <td>配列内の指定されたスキーマの一つに対してデータが有効であることを保証するために用いる。</td>
+    <td>当該データが、配列内で指定されたスキーマのいずれかに対して有効であることを保証するために用いられる。</td>
     <td>オプション</td>
     <td><a href="#dataschema"><code>DataSchema</code></a>の<a href="#dfn-array" class="internalDFN" data-link-type="dfn">配列</a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-enum--DataSchema">
     <td><code>enum</code></td>
-    <td>配列として提供される制限のある値の集合。</td>
+    <td>配列として提供される、制限された値の集合。</td>
     <td>オプション</td>
     <td>任意の型の<a href="#dfn-array" class="internalDFN" data-link-type="dfn">配列</a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-readOnly--DataSchema">
     <td><code>readOnly</code></td>
-    <td>プロパティーの相互作用/値が読み取り専用か (=true) 否か (=false) を示すヒントであるブール値。</td>
+    <td>プロパティーの相互作用/値が読み取り専用か (=true) 否か (=false) を示すヒントであるブーリアン値。</td>
     <td><a href="#sec-default-values">デフォルトあり</a></td>
     <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#boolean"><code>boolean</code></a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-writeOnly--DataSchema">
     <td><code>writeOnly</code></td>
-    <td>プロパティーの相互作用/値が書き込み専用か (=true) 否か (=false) を示すヒントであるブール値。</td>
+    <td>プロパティーの相互作用/値が書き込み専用か (=true) 否か (=false) を示すヒントであるブーリアン値。</td>
     <td><a href="#sec-default-values">デフォルトあり</a></td>
     <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#boolean"><code>boolean</code></a></td>
   </tr>
   <tr class="rfc2119-table-assertion" id="td-vocab-format--DataSchema">
     <td><code>format</code></td>
-    <td>「date-time」、「email」、「uri」などの形式パターンに基づく検証を可能にする (以下も参照)。</td>
+    <td>「date-time」、「email」、「uri」などの形式パターンに基づくバリデーションを可能にする (以下も参照のこと)。</td>
     <td>オプション</td>
     <td><a href="http://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#string"><code>string</code></a></td>
   </tr>
@@ -2083,7 +2083,7 @@
   <li><a href="#nullschema"><code>NullSchema</code></a></li>
 </ul>
 
-<p><code>format</code>の文字列の値は、 [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-schema" title="JSON Schema Validation: A Vocabulary for Structural Validation of JSON">JSON-SCHEMA</a></cite>] (特に、7.3 定義フォーマット) で定義されている固定値の集合とその対応するフォーマットの規則から判別される。<span class="rfc2119-assertion" id="td-format-validation-known-values"><span class="mark">Servient</span>は、<code>format</code>の値を用いて、それに応じた追加の検証を実行できる (<em class="rfc2119" title="MAY">MAY</em>) </span>。<span class="rfc2119-assertion" id="td-format-validation-other-values">既知の値の集合にない値が<code>format</code>に割り当てられていれば、そのような検証は成功すべきである (<em class="rfc2119" title="SHOULD">SHOULD</em>)。</span></p>
+<p><code>format</code>文字列の値は、 [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-schema" title="JSON Schema Validation: A Vocabulary for Structural Validation of JSON">JSON-SCHEMA</a></cite>] (特に、7.3 定義フォーマット) で定義されている一定の値の集合と、それらに対応するフォーマットの規則から判別される。<span class="rfc2119-assertion" id="td-format-validation-known-values"><span class="mark">Servient</span>は、<code>format</code>の値を用いて、それに応じた追加のバリデーションを実行できる (<em class="rfc2119" title="MAY">MAY</em>) </span>。<span class="rfc2119-assertion" id="td-format-validation-other-values">既知の値の集合中に含まれない値が<code>format</code>に割り当てられていれば、そのようなバリデーションは成功すべきである (<em class="rfc2119" title="SHOULD">SHOULD</em>)。</span></p>
 
 </section>
 <section id="arrayschema">
