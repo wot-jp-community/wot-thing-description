@@ -2321,7 +2321,7 @@
 
 <h5 id="x5-3-3-3-basicsecurityscheme"><bdi class="secno">5.3.3.3</bdi> <code>BasicSecurityScheme</code> (基本セキュリティスキーム) <a class="self-link" aria-label="§" href="#basicsecurityscheme"></a></h5>
 
-<p><code>basic</code>という<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>で識別される基本認証 [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7617" title="The 'Basic' HTTP Authentication Scheme">RFC7617</a></cite>] セキュリティ<span class="mark">構成情報</span> (つまり、<code>"scheme": "basic"</code>) で、暗号化されていないユーザ名とパスワードを用いる。このスキームは、例えば、TLSなどの機密性を提供する他のセキュリティメカニズムとともに用いるべきである。</p>
+<p><code>basic</code>という<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a> (つまり、<code>"scheme": "basic"</code>) で識別される基本認証 [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7617" title="The 'Basic' HTTP Authentication Scheme">RFC7617</a></cite>] セキュリティ<span class="mark">構成情報</span>で、暗号化されていないユーザ名とパスワードを用いる。このスキームは、例えば、TLSなどの機密性を提供する他のセキュリティメカニズムとともに用いるべきである。</p>
 
 <table class="def">
 <thead>
@@ -2391,7 +2391,7 @@
 
 <h5 id="x5-3-3-5-apikeysecurityscheme"><bdi class="secno">5.3.3.5</bdi> <code>APIKeySecurityScheme</code> (APIキーセキュリティスキーム) <a class="self-link" aria-label="§" href="#apikeysecurityscheme"></a></h5>
 
-<p><code>apikey</code>という<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>で識別されるAPIキー認証セキュリティ<span class="mark">構成情報</span> (つまり、<code>"scheme": "apikey"</code>)。これは、アクセストークンが不透明で、標準的なトークン形式を用いていない場合である。</p>
+<p><code>apikey</code>という<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a> (つまり、<code>"scheme": "apikey"</code>) で識別されるAPIキー認証セキュリティ<span class="mark">構成情報</span>。これは、アクセストークンが不透明で、標準的なトークン形式を用いていない場合である。</p>
 
 <table class="def">
 <thead>
@@ -2423,7 +2423,7 @@
 
 <h5 id="x5-3-3-6-bearersecurityscheme"><bdi class="secno">5.3.3.6</bdi> <code>BearerSecurityScheme</code> (ベアラーセキュリティースキーム) <a class="self-link" aria-label="§" href="#bearersecurityscheme"></a></h5>
 
-<p>ベアラートークンがOAuth2と関わりなく用いられる状況のために、<code>bearer</code>という<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>で識別されるベアラートークン [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc6750" title="The OAuth 2.0 Authorization Framework: Bearer Token Usage">RFC6750</a></cite>] セキュリティ<span class="mark">構成情報</span> (つまり、<code>"scheme": "bearer"</code>)。<code>oauth2</code>スキームが指定されている場合は、一般的に、このスキームを指定する必要はなく、暗黙的に指定されている。<code>format</code>では、<code>jwt</code>という値は [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7519" title="JSON Web Token (JWT)">RFC7519</a></cite>] との適合性を示し、<code>jws</code>は [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7797" title="JSON Web Signature (JWS) Unencoded Payload Option">RFC7797</a></cite>] との適合性を示し、<code>cwt</code>は [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8392" title="CBOR Web Token (CWT) ">RFC8392</a></cite>] との適合性を示し、<code>jwe</code>は [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7516" title="JSON Web Encryption (JWE) ">RFC7516</a></cite>] との適合性を示し、<code>alg</code>の値をこれらの標準と整合的に解釈する。<span class="rfc2119-assertion" id="td-security-bearer-format-extensions">ベアラートークンのその他の形式とアルゴリズムは、語彙拡張で指定できる (<em class="rfc2119" title="MAY">MAY</em>)。</span></p>
+<p>ベアラートークンがOAuth2と関わりなく用いられる状況のために、<code>bearer</code>という<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a> (つまり、<code>"scheme": "bearer"</code>) で識別されるベアラートークン [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc6750" title="The OAuth 2.0 Authorization Framework: Bearer Token Usage">RFC6750</a></cite>] セキュリティ<span class="mark">構成情報</span>。<code>oauth2</code>スキームが指定されている場合は、一般的に、このスキームを指定する必要はなく、暗黙的に指定されている。<code>format</code>では、<code>jwt</code>という値は [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7519" title="JSON Web Token (JWT)">RFC7519</a></cite>] との適合性を示し、<code>jws</code>は [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7797" title="JSON Web Signature (JWS) Unencoded Payload Option">RFC7797</a></cite>] との適合性を示し、<code>cwt</code>は [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8392" title="CBOR Web Token (CWT) ">RFC8392</a></cite>] との適合性を示し、<code>jwe</code>は [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc7516" title="JSON Web Encryption (JWE) ">RFC7516</a></cite>] との適合性を示し、<code>alg</code>の値をこれらの標準と整合的に解釈する。<span class="rfc2119-assertion" id="td-security-bearer-format-extensions">ベアラートークンのその他の形式とアルゴリズムは、語彙拡張で指定できる (<em class="rfc2119" title="MAY">MAY</em>)。</span></p>
 
 <table class="def">
 <thead>
@@ -2473,7 +2473,7 @@
 
 <h5 id="x5-3-3-7-psksecurityscheme"><bdi class="secno">5.3.3.7</bdi> <code>PSKSecurityScheme</code> (PSKセキュリティスキーム) <a class="self-link" aria-label="§" href="#psksecurityscheme"></a></h5>
 
-<p><code>psk</code>という<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>で識別される事前共有キー認証セキュリティ<span class="mark">構成情報</span> (つまり、<code>"scheme": "psk"</code>)。</p>
+<p><code>psk</code>という<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a> (つまり、<code>"scheme": "psk"</code>) で識別される事前共有キー認証セキュリティ<span class="mark">構成情報</span>。</p>
 
 <table class="def">
 <thead>
@@ -2499,7 +2499,7 @@
 
 <h5 id="x5-3-3-8-oauth2securityscheme"><bdi class="secno">5.3.3.8</bdi> <code>OAuth2SecurityScheme</code> (OAuth2セキュリティスキーム) <a class="self-link" aria-label="§" href="#oauth2securityscheme"></a></h5>
 
-<p><code>oauth2</code>という<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a>で識別される、 [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc6749" title="The OAuth 2.0 Authorization Framework">RFC6749</a></cite>] と [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8252" title="OAuth 2.0 for Native Apps">RFC8252</a></cite>] に適合するシステムのためのOAuth2認証セキュリティ<span class="mark">構成情報</span>である (つまり、<code>"scheme": "oauth2"</code>)。<span class="rfc2119-assertion" id="td-security-oauth2-code-flow"><code>code</code>のフローでは、<code>authorization</code>と<code>token</code>の両方が含まれていなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span><code>SecurityScheme</code>で<code>scopes</code>が定義されていなければ、それは空と見なされる。</p>
+<p><code>oauth2</code>という<a href="#dfn-vocab-term" class="internalDFN" data-link-type="dfn">語彙用語</a> (つまり、<code>"scheme": "oauth2"</code>) で識別される、 [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc6749" title="The OAuth 2.0 Authorization Framework">RFC6749</a></cite>] と [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc8252" title="OAuth 2.0 for Native Apps">RFC8252</a></cite>] に適合するシステムのためのOAuth2認証セキュリティ<span class="mark">構成情報</span>である。<span class="rfc2119-assertion" id="td-security-oauth2-code-flow"><code>code</code>のフローでは、<code>authorization</code>と<code>token</code>の両方が含まれていなければならない (<em class="rfc2119" title="MUST">MUST</em>)。</span><code>SecurityScheme</code>で<code>scopes</code>が定義されていなければ、それは空と見なされる。</p>
 
 <table class="def">
 <thead>
